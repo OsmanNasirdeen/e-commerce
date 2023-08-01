@@ -1,11 +1,65 @@
 :root {
   --body-font: "Lato", sans-serif;
   --heading-font: "Jost", sans-serif;
+  --yellow-color: #ffc107;
   --navbar-bg-color: #f8f9fa;
+  --products-container-bg-color: #f5f7f9;
   --bannner-bg-color: #edf1f3;
   --white: #ffffff;
+  --black: #111111;
+  --charcoal: #36454f;
   --blue-charcoal: #212529;
   --black-nero: #272727;
+  --gray: #9daec2;
   --dark-gray: #aeaeae;
+  --violet: #5964e0;
   --lighter-blue: #72aec8;
+  --offers-icon-color: #b8d6e3;
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --fs-24: 24px;
+  --fs-20: 20px;
+  --fs-14: 14px;
+  --fs-16: 16px;
+  --fs-28: 28px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--body-font);
+  font-size: var(--fs-16);
+  font-weight: var(--fw-regular);
+  /* line-height: 1.6; */
+}
+.button-black {
+  font-family: var(--body-font);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-16);
+  background: var(--black-nero);
+  color: var(--white);
+  border: 1px solid var(--black-nero);
+  line-height: 19.84px;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+}
+.card-button {
+  background: var(--white);
+  border: 1px solid var(--white);
+  /* font-family: var(--body-font); */
+  /* font-weight: var(--fw-bold); */
+  /* font-size: var(--fs-2); */
+  /* line-height: 19.84px; */
+  cursor: pointer;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
