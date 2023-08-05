@@ -1,0 +1,94 @@
+.footer-section {
+  margin: 100px 0 0 0;
+}
+.footer-company-details {
+  display: grid;
+  grid-template-columns: repeat(4, 237px);
+  /* column-gap: 70px; */
+  /* background: red; */
+  padding-bottom: 49px;
+  border-bottom: 0.12rem solid var(--dark-gray);
+  /* border-width: 2px; */
+  justify-content: center;
+  /* justify-content: space-evenly; */
+}
+.company-info-container {
+  max-width: 237px;
+}
+.footer-section li {
+  list-style: none;
+}
+.footer-section h3 {
+  margin: 0 0 20px 0;
+}
+.footer-section ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+.footer-company-about {
+  position: relative;
+  right: 40%;
+}
+.footer-logo-container {
+  margin: 0 0 23px 0;
+}
+.footer-about-text {
+  margin: 0 0 25px 0;
+  color: var(--dark-gray);
+  font-size: 1.12rem;
+  line-height: 20px;
+}
+.footer-social-icons-container {
+  flex-direction: row !important;
+  column-gap: 35px;
+}
+.footer-social-icons-container > li {
+  filter: invert(82%) sepia(4%) saturate(17%) hue-rotate(3deg) brightness(87%)
+    contrast(85%);
+}
+.brand-blue:hover {
+  filter: invert(37%) sepia(84%) saturate(535%) hue-rotate(197deg)
+    brightness(97%) contrast(96%);
+}
+.brand-red:hover {
+  filter: invert(17%) sepia(78%) saturate(4671%) hue-rotate(356deg)
+    brightness(81%) contrast(129%);
+}
+.company-info-container > h3 {
+  font-family: var(--heading-font);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--blue-charcoal);
+}
+.footer-message-us-body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.sub-footer {
+  margin: 23px 0 0 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.sub-footer > div {
+  display: flex;
+}
+.sub-footer ul {
+  margin-left: 5px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  column-gap: 10px;
+}
+.payment-option,
+.partner-item {
+  width: 23px;
+}
+.vodafone-icon-container > img {
+  filter: invert(17%) sepia(78%) saturate(4671%) hue-rotate(356deg)
+    brightness(81%) contrast(129%);
+}
+.paypal-icon-container {
+  width: 40px;
+}

@@ -5,7 +5,7 @@ const Shop = () => {
     <section className="shop-container">
       <Products />
       <div className="load-more-btn-container">
-        <button>load More</button>
+        <button className="button-black">load More</button>
       </div>
     </section>
   );

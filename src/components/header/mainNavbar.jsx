@@ -1,9 +1,11 @@
 import React from "react";
-
+import companyLogo from "../../assets/images/company-logo.jpg";
 const MainNavbar = () => {
   return (
     <section className="main-navbar">
-      <div className="navbar-company-logo">store logo here</div>
+      <div className="navbar-company-logo company-logo-container">
+        <img src={companyLogo} alt="company-logo" />
+      </div>
       <ul className="main-navbar-links">
         <li className="nav-link">About</li>
         <li className="nav-link">Services</li>
@@ -12,7 +14,7 @@ const MainNavbar = () => {
       </ul>
       <div className="user-profile">
         <div className="profile-image-container">
-          <img src="" alt="user-imgage" />
+          <img src="" alt="user-image" />
         </div>
       </div>
     </section>

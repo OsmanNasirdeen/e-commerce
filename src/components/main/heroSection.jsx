@@ -1,5 +1,5 @@
 import React from "react";
-import headerImage from "../../assets/images/basket.svg";
+import headerImage from "../../assets/images/hero-headphone.svg";
 const HeroSection = () => {
   return (
     <section className="header-section">

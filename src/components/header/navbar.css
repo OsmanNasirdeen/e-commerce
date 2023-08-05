@@ -50,6 +50,14 @@
   display: flex;
   align-items: center;
 }
+.company-logo-container > img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  transform: scale(1.4);
+}
 .navbar-company-logo {
   position: absolute;
   left: 2.5%;
