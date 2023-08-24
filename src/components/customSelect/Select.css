@@ -1,0 +1,10 @@
+.select-primary {
+  height: 48px;
+  padding-left: 11px;
+  border: 1px solid var(--gray);
+  border-radius: 3px;
+  text-transform: capitalize;
+}
+.select-primary:focus {
+  outline-color: var(--dark-violet);
+}

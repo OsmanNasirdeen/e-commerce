@@ -10,8 +10,9 @@
   display: flex;
   flex-direction: row;
   top: calc(50% - 17px);
-  /* search-field-width minus search-icon-width = 581px */
-  left: calc(50% - 581px);
+  left: calc(
+    50% - 581px
+  ); /* search-field-width minus search-icon-width = 581px */
 }
 .navbar-search-field {
   height: 40px;

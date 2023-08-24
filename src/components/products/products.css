@@ -1,0 +1,10 @@
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(5, 238px);
+  grid-column-gap: 20px;
+  grid-row-gap: 60px;
+  /* grid-row-gap: 68px; */
+  justify-content: center;
+  background: var(--products-container-bg-color);
+  /* background-color: gold; */
+}

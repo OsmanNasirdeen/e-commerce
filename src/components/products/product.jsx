@@ -1,6 +1,7 @@
 import React from "react";
-import demoProd from "../../../assets/images/banner.jpg";
-import shoppingCart from "../../../assets/images/shoppingcart.svg";
+import demoProd from "../../assets/images/banner.jpg";
+import shoppingCart from "../../assets/images/shoppingcart.svg";
+import "./product.css";
 const Product = () => {
   return (
     <div className="product product-card">

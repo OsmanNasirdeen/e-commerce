@@ -1,0 +1,62 @@
+.newsletter-section {
+  position: relative;
+  margin: 0 auto;
+  width: 1140px;
+  height: 201px;
+  background: var(--blue-charcoal);
+  color: var(--white);
+}
+.newsletter-text-container {
+  position: absolute;
+  top: 63px;
+  left: 58px;
+  width: 519px;
+  height: 58px;
+  /* background: greenyellow; */
+}
+.newsletter-text-container > h1 {
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.6rem;
+}
+.newsletter-text-container > p {
+  color: var(--dark-gray);
+  font-family: var(--casual-font);
+  font-size: 1.1rem;
+  margin: 10px 0 0 0;
+}
+
+.newsletter-email-container {
+  position: absolute;
+  top: 77px;
+  right: 58px;
+}
+.newsletter-email-container > form {
+  display: flex;
+}
+.newsletter-email {
+  width: 278px;
+  height: 45px;
+  font-size: 1rem;
+  padding: 0 0 0 12px;
+  letter-spacing: 1.5px;
+  color: var(--black-nero);
+}
+.newsletter-btn {
+  font-family: var(--body-font);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-20);
+  background: var(--lighter-blue);
+  color: var(--white);
+  border: 1px solid var(--lighter-blue);
+  line-height: 19.84px;
+  cursor: pointer;
+  border-radius: 2px;
+  height: 45px;
+  width: 189px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  /* position: relative; */
+  margin: 0 0 0 -1px;
+}

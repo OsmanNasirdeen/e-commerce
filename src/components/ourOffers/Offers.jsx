@@ -3,7 +3,9 @@ import dealsIcon from "../../assets/images/deals-icon.png";
 import shoppingCart from "../../assets/images/shoppingcart.svg";
 import qualityIcon from "../../assets/images/quality-icon.png";
 import securityIcon from "../../assets/images/secure-icon.svg";
-const OurOffers = () => {
+import "./offers.css";
+
+const Offers = () => {
   return (
     <section className="offers-section">
       <div className="offer">
@@ -58,4 +60,4 @@ const OurOffers = () => {
   );
 };
 
-export default OurOffers;
+export default Offers;
