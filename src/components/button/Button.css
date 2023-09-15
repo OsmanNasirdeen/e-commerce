@@ -5,6 +5,7 @@
   border: 1px solid transparent;
   border-radius: 3px;
   background: var(--violet);
+  cursor: pointer;
 }
 .btn-violet:hover {
   background: var(--dark-violet);

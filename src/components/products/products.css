@@ -8,3 +8,19 @@
   background: var(--products-container-bg-color);
   /* background-color: gold; */
 }
+
+/* tablet */
+@media (min-width: 769px) and (max-width: 992px) {
+  .products-container {
+    grid-template-columns: repeat(3, 238px);
+    grid-column-gap: 40px;
+  }
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .products-container {
+    grid-template-columns: repeat(1, 238px);
+    grid-row-gap: 60px;
+  }
+}

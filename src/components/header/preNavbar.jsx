@@ -1,6 +1,7 @@
 import React from "react";
 import searchIcon from "../../assets/images/icon-search.svg";
 import shoppingBag from "../../assets/images/my-bag.svg";
+import { Link } from "react-router-dom";
 const PreNavbar = () => {
   return (
     <section className="pre-navbar">
@@ -18,10 +19,12 @@ const PreNavbar = () => {
         </button>
       </form>
       <div className="shopping-bag">
-        <div className="shopping-bag-img-container">
-          <img src={shoppingBag} alt="shopping-basket" />
-        </div>
-        <div className="bag-items-count">0</div>
+        <Link to="/cart">
+          <div className="shopping-bag-img-container">
+            <img src={shoppingBag} alt="shopping-basket" />
+          </div>
+          <div className="bag-items-count">0</div>
+        </Link>
       </div>
     </section>
   );

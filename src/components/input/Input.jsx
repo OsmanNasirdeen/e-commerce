@@ -10,6 +10,7 @@ const Input = ({ details }) => {
         className={details.className}
         placeholder={details.placeholder}
         style={{ width: details.width }}
+        onChange={details.controls?.handleChange}
       />
     </>
   );

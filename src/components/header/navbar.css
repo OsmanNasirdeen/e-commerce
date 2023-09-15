@@ -31,6 +31,9 @@
   left: 30%;
   /* background: green; */
 }
+.shopping-bag a {
+  text-decoration: none;
+}
 .shopping-bag-img-container {
   width: 60px;
 }
@@ -75,6 +78,15 @@
 .main-navbar-links > li {
   margin-right: 40px;
 }
+.main-navbar-links a {
+  text-decoration: none;
+  color: var(--black-charcoal);
+  letter-spacing: 0.5px;
+}
+.main-navbar-links a:hover {
+  color: var(--violet);
+}
+
 .user-profile {
   position: absolute;
   right: 4%;

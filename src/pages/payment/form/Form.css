@@ -1,0 +1,25 @@
+#checkout-payment-form {
+  width: 100%;
+  /* background: gold; */
+  display: flex;
+  flex-direction: column;
+  row-gap: 26px;
+}
+.payment-type-wrapper {
+  background: var(--yellow-color);
+  padding: 24px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  column-gap: 15px;
+}
+#checkout-payment-form label {
+  margin-bottom: 13px;
+}
+.payment-submit-btn-wrapper {
+  margin: 0 auto 0 auto;
+  width: 80%;
+}
+.payment-submit-btn-wrapper > button {
+  width: 100%;
+}
