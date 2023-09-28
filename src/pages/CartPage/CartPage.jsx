@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Hero from "../../components/hero/Hero";
 import HeroImg from "../../assets/images/my-bag.svg";
 import Cart from "./Cart/cart";
@@ -14,10 +15,14 @@ const CartPage = () => {
         <Cart />
         <div className="cart-checkout-actions">
           <div className="continue-btn-container">
-            <button className="button-normal">continue shopping</button>
+            <Link to="/">
+              <button className="button-normal">continue shopping</button>
+            </Link>
           </div>
           <div className="checkout-btn-container">
-            <button className="button-normal">proceed to checkout</button>
+            <Link to="/checkout">
+              <button className="button-normal">proceed to checkout</button>
+            </Link>
           </div>
         </div>
       </section>

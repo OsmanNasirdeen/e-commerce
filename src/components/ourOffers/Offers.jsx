@@ -25,7 +25,7 @@ const Offers = () => {
           <div className="offer-img-container">
             <img src={qualityIcon} alt="" />
           </div>
-          <h3 className="offer-heading">free delivery</h3>
+          <h3 className="offer-heading">QUALITY GUARANTEE</h3>
         </div>
         <p className="offer-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam officia
@@ -37,7 +37,7 @@ const Offers = () => {
           <div className="offer-img-container">
             <img src={dealsIcon} alt="" />
           </div>
-          <h3 className="offer-heading">free delivery</h3>
+          <h3 className="offer-heading">DAILY OFFERS</h3>
         </div>
         <p className="offer-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam officia
@@ -49,7 +49,7 @@ const Offers = () => {
           <div className="offer-img-container">
             <img src={securityIcon} alt="" />
           </div>
-          <h3 className="offer-heading">free delivery</h3>
+          <h3 className="offer-heading">100% SECURE PAYMENT</h3>
         </div>
         <p className="offer-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam officia

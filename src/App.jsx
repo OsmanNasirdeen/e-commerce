@@ -1,4 +1,5 @@
-import "./App.css";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import SignUp from "./pages/SignUp/SignUp";
 import LogIn from "./pages/logIn/LogIn";
 import HomePage from "./pages/Homepage/HomePage";
@@ -8,14 +9,27 @@ import Checkout from "./pages/CheckoutPage/checkout";
 import Payment from "./pages/payment/Payment";
 import CheckoutSuccess from "./pages/Checkout-Success-page/CheckoutSuccess";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import {
+  getProducts,
+  calculateTotalCart,
+} from "./features/products/ProductSlice";
+import "./App.css";
 
 function App() {
+  const { cartProducts } = useSelector((state) => state.store);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getProducts());
+  }, []);
+  useEffect(() => {
+    dispatch(calculateTotalCart());
+  }, [cartProducts]);
   return (
     <>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/detail" element={<DetailsPage />} />
+          <Route path="/details/:productName" element={<DetailsPage />} />
           <Route path="/cart" element={<CartPage />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="payment" element={<Payment />} />

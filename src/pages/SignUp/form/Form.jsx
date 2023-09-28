@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
 import Input from "../../../components/input/Input";
 import Button from "../../../components/button/button";
 import validateForm from "./validateForm";
 import "./form.css";
 const Form = () => {
+  const navigate = useNavigate();
   const [user, setUser] = useState({
     firstName: "",
     lastName: "",
@@ -22,10 +25,21 @@ const Form = () => {
     setFormErrors(validateForm(user));
     setShouldSubmit(true);
   };
+  const registerUser = () => {
+    axios
+      .post(`${import.meta.env.VITE_USERS_ROUTE}/signUp`, user)
+      .then((response) => {
+        console.log(response.data);
+        navigate("/login");
+      })
+      .catch((error) => {
+        console.log(error.response.data);
+      });
+  };
   // submit form when no errs
   useEffect(() => {
     if (Object.keys(formErrors).length === 0 && shouldSubmit) {
-      console.log(`${JSON.stringify(user)}`);
+      registerUser();
     }
   }, [formErrors]);
   return (

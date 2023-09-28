@@ -23,13 +23,14 @@
   row-gap: 14px;
 }
 #checkout-total-section {
-  width: 85%;
+  width: 80%;
   /* background: gold; */
   display: flex;
   flex-direction: column;
   position: relative;
-  margin: 30px auto 0px auto;
-  /* left: 40px; */
+  margin: 40px auto 0px auto;
+  /* top: 30px; */
+  /* left: 50px; */
 }
 #checkout-total-section > article {
   display: flex;
@@ -37,8 +38,11 @@
 }
 #checkout-total-section > article > p:nth-child(1) {
   text-transform: capitalize;
+  color: var(--violet);
+  font-family: var(--casual-font);
 }
 #checkout-total-section > article > p:nth-child(2) {
+  color: var(--violet);
   margin-left: auto;
 }
 @media (min-width: 992px) {

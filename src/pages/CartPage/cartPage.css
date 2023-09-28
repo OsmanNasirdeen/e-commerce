@@ -28,24 +28,24 @@
   height: 47px;
   margin: 0 30px 0 0;
 }
-.checkout-btn-container > button {
+.checkout-btn-container button {
   background: var(--yellow-color);
   border: 1px solid transparent;
   text-transform: uppercase;
   letter-spacing: 0.8px;
 }
-.checkout-btn-container > button:hover {
+.checkout-btn-container button:hover {
   color: white;
   background: var(--violet);
 }
-.continue-btn-container > button {
+.continue-btn-container button {
   letter-spacing: 0.8px;
   background: var(--violet);
   border: 1px solid transparent;
   color: white;
   text-transform: uppercase;
 }
-.continue-btn-container > button:hover {
+.continue-btn-container button:hover {
   background: var(--yellow-color);
   color: var(--black);
 }

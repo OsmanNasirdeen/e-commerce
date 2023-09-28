@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
 import Input from "../../../components/input/Input";
 import Button from "../../../components/button/button";
 import validateForm from "./validateForm";
 import "./form.css";
+
 const Form = () => {
+  const navigate = useNavigate();
   const [user, setUser] = useState({ email: "", password: "" });
   const [shouldSubmit, setShouldSubmit] = useState(false);
   const [formErrors, setFormErrors] = useState({});
@@ -17,11 +21,22 @@ const Form = () => {
     setFormErrors(validateForm(user));
     setShouldSubmit(true);
   };
+
+  const URL = "http://localhost:7000/users/logIn";
+  const loginUser = () => {
+    axios
+      .post(URL, user)
+      .then((response) => {
+        console.log(response.data);
+        navigate("/");
+      })
+      .catch((error) => console.log(error.response.data));
+  };
+
   // submit form when no errs
   useEffect(() => {
     if (Object.keys(formErrors).length === 0 && shouldSubmit) {
-      console.log(`${user.email}`);
-      console.log(`${user.password}`);
+      loginUser();
     }
   }, [formErrors]);
   return (

@@ -1,8 +1,10 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import Product from "../product/product";
 import "./cart.css";
 
 const Cart = () => {
+  const { cartProducts, cartTotalAmount } = useSelector((state) => state.store);
   return (
     <>
       <div className="cart-headings">
@@ -11,11 +13,28 @@ const Cart = () => {
         <p className="total-heading">total</p>
       </div>
       <div className="cart-products-container">
-        <Product />
-        <Product />
+        {cartProducts.length == 0 ? (
+          <h1>bag is empty</h1>
+        ) : (
+          cartProducts.map((product) => {
+            const { title, price, image, _id, amount } = product;
+            return (
+              <Product
+                details={{
+                  title: title,
+                  image: image,
+                  price: price,
+                  amount: amount,
+                  id: _id,
+                }}
+                key={_id}
+              />
+            );
+          })
+        )}
         <div className="cart-total-container">
           <p className="total-heading">total:</p>
-          <p className="cart-total-price">ghc 15000</p>
+          <p className="cart-total-price">GHC {cartTotalAmount}</p>
         </div>
       </div>
     </>
