@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import Button from "../../../components/button/button";
 import Input from "../../../components/input/Input";
 import Select from "../../../components/customSelect/select";
 import { validateForm } from "./validateForm";
 import "./Form.css";
 const Form = () => {
+  const navigate = useNavigate();
   const cityOptions = ["Tamale", "Accra", "Navrongo", "kumasi"];
   const [user, setUser] = useState({
     email: "",
@@ -30,8 +32,8 @@ const Form = () => {
   // submit form when no errors
   useEffect(() => {
     if (Object.keys(formErrors).length === 0 && shouldSubmit) {
-      console.log(`${user.firstName} " " ${user.lastName}`);
       console.log(`${JSON.stringify(user)}`);
+      navigate("/payment");
     }
   }, [formErrors]);
   return (

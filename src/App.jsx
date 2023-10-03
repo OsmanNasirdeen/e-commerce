@@ -18,8 +18,9 @@ import "./App.css";
 function App() {
   const { cartProducts } = useSelector((state) => state.store);
   const dispatch = useDispatch();
+  // fetch data
   useEffect(() => {
-    dispatch(getProducts());
+    dispatch(getProducts({ url: import.meta.env.VITE_PRODUCTS_URL }));
   }, []);
   useEffect(() => {
     dispatch(calculateTotalCart());

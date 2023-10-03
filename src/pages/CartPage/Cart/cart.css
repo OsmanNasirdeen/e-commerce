@@ -12,7 +12,7 @@
 }
 .cart-headings > p {
   height: 25px;
-  position: relative;
+  /* position: relative; */
 }
 .cart-headings > .product-heading {
   left: 2%;

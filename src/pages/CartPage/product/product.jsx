@@ -15,9 +15,10 @@ const Product = ({ details }) => {
   const product = cartProducts.find((item) => {
     return item._id === details.id;
   });
+
   return (
-    <div className="cart-product">
-      <div className="cart-product-details-container">
+    <div className="cart-product row">
+      <div className="cart-product-details-container col-4">
         <div className="cart-product-img-container">
           <img src={details.image} alt="" />
         </div>
@@ -28,7 +29,7 @@ const Product = ({ details }) => {
           </p>
         </div>
       </div>
-      <div className="cart-product-quantity-container">
+      <div className="cart-product-quantity-container col-3 col-md-3">
         <p className="cart-product-quantity-control">
           <button
             className="cart-btn"
@@ -50,14 +51,14 @@ const Product = ({ details }) => {
           </button>
         </p>
       </div>
-      <div className="cart-product-total">
+      <div className="cart-product-total col-2 col-md-2">
         <p>
           GHC
-          {details.price.$numberDecimal * details.amount}
+          {details.totalAmount.toFixed(2)}
         </p>
       </div>
       <div
-        className="cart-delete-product"
+        className="cart-delete-product col-1 col-md-2"
         onClick={() => {
           dispatch(removeFromCart(details.id));
         }}>

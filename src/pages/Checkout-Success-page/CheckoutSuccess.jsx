@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./CheckoutSuccess.css";
 const CheckoutSuccess = () => {
   return (
@@ -9,7 +10,9 @@ const CheckoutSuccess = () => {
         parcel is on its way.
       </div>
       <div className="checkout-success-btn-container">
-        <button className="btn-back-home">back to homepage</button>
+        <Link to="/">
+          <button className="btn-back-home">back to homepage</button>
+        </Link>
         <button className="btn-view-order">view order</button>
       </div>
     </section>

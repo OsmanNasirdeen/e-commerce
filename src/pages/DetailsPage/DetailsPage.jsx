@@ -1,9 +1,11 @@
 import React from "react";
 import demo from "../../assets/images/banner.jpg";
 import { useParams } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { addToCart } from "../../features/products/ProductSlice";
 import "./DetailsPage.css";
 const DetailsPage = () => {
+  const dispatch = useDispatch();
   const { productName } = useParams();
   const { products } = useSelector((state) => state.store);
   // find product from the list
@@ -27,7 +29,11 @@ const DetailsPage = () => {
             <p className="price">GHC {price.$numberDecimal}</p>
             <p className="description">{description}</p>
             <div>
-              <button className="btn-add-cart ">add to cart</button>
+              <button
+                className="btn-add-cart "
+                onClick={() => dispatch(addToCart(product))}>
+                add to cart
+              </button>
             </div>
           </div>
         </article>

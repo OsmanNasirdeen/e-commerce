@@ -19,8 +19,8 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  margin: 0 auto 0 auto;
-  row-gap: 14px;
+  margin: 0 30px;
+  row-gap: 15px;
 }
 #checkout-total-section {
   width: 80%;

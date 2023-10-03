@@ -6,26 +6,23 @@
 .checkout-product > img {
   margin-right: 10px;
   height: 110px;
-  width: 110px;
+  width: 130px;
   object-fit: cover;
   object-position: center;
 }
 .checkout-product-details {
-  position: relative;
-  /* top: -5px; */
-  /* max-width: 290px; */
-  /* display: flex; */
-  /* flex-direction: column; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 #checkout-product-price-wrapper {
-  margin-bottom: auto;
-  position: absolute;
-  bottom: 10px;
+  /* position: absolute; */
+  /* bottom: 10px; */
 }
 
 #checkout-product-total {
-  position: relative;
+  /* position: relative; */
   /* top: 50%; */
   /* right: 40px; */
-  margin: auto 0 20px auto;
+  margin: auto 0 2px auto;
 }

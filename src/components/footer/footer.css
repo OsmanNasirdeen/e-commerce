@@ -4,13 +4,9 @@
 .footer-company-details {
   display: grid;
   grid-template-columns: repeat(4, 237px);
-  /* column-gap: 70px; */
-  /* background: red; */
   padding-bottom: 49px;
   border-bottom: 0.12rem solid var(--dark-gray);
-  /* border-width: 2px; */
   justify-content: center;
-  /* justify-content: space-evenly; */
 }
 .company-info-container {
   max-width: 237px;
@@ -91,4 +87,19 @@
 }
 .paypal-icon-container {
   width: 40px;
+}
+@media (max-width: 768px) {
+  .footer-company-details {
+    grid-template-columns: repeat(1, 237px);
+    /* padding-bottom: 49px; */
+    justify-content: start;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .footer-company-details {
+    grid-template-columns: repeat(3, 237px);
+    justify-content: start;
+
+    /* padding-bottom: 49px; */
+  }
 }

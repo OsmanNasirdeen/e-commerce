@@ -1,46 +1,52 @@
 .pre-navbar {
-  height: 68px;
+  height: 80px;
+  width: 100%;
   background: var(--black);
   position: relative;
-  display: flex;
-  flex-direction: row;
+}
+.pre-navbar .form-error-msg {
+  position: absolute;
+  left: 10%;
 }
 .navbar-search-form {
-  position: relative;
+  position: absolute;
   display: flex;
   flex-direction: row;
-  top: calc(50% - 17px);
-  left: calc(
-    50% - 581px
-  ); /* search-field-width minus search-icon-width = 581px */
+  top: calc(50% - 15px);
+  left: 10%; /* search-field-width minus search-icon-width = 581px */
 }
 .navbar-search-field {
   height: 40px;
   width: 626px;
+  padding-left: 11px;
+  border: 1px solid transparent;
+  border-radius: 1px;
+}
+.navbar-search-field:focus {
+  outline: 2px solid var(--yellow-color);
 }
 .navbar-search-icon {
   background: var(--yellow-color);
-  border: 1px solid var(--yellow-color);
+  border: 1px solid transparent;
   height: 40px;
   width: 45px;
 }
 .shopping-bag {
-  position: relative;
+  position: absolute;
   height: 60px;
   top: 9%;
-  left: 30%;
-  /* background: green; */
+  right: 15%;
 }
 .shopping-bag a {
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 .shopping-bag-img-container {
   width: 60px;
 }
 .bag-items-count {
-  position: relative;
-  top: -115%;
-  left: 70%;
+  position: absolute;
+  top: 5%;
+  right: 15%;
   color: white;
   font-family: var(--body-font);
   font-size: var(--fs-20);
@@ -65,13 +71,13 @@
 .navbar-company-logo {
   position: absolute;
   left: 2.5%;
-  /* left: 31px; */
+  top: 25%;
 }
 
 .main-navbar-links {
   position: absolute;
+  top: 50%;
   left: 39.5%;
-  /* left: 540px; */
   list-style: none;
   display: flex;
 }

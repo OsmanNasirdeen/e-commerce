@@ -1,6 +1,6 @@
 import React from "react";
 import dealsIcon from "../../assets/images/deals-icon.png";
-import shoppingCart from "../../assets/images/shoppingcart.svg";
+import shoppingCart from "../../assets/images/shopping-cart-icon.svg";
 import qualityIcon from "../../assets/images/quality-icon.png";
 import securityIcon from "../../assets/images/secure-icon.svg";
 import "./offers.css";

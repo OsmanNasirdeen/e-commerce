@@ -4,9 +4,11 @@ import { Link } from "react-router-dom";
 const MainNavbar = () => {
   return (
     <section className="main-navbar">
-      <div className="navbar-company-logo company-logo-container">
-        <img src={companyLogo} alt="company-logo" />
-      </div>
+      <Link to="/">
+        <div className="navbar-company-logo company-logo-container">
+          <img src={companyLogo} alt="company-logo" />
+        </div>
+      </Link>
       <ul className="main-navbar-links">
         <li>
           <Link to="/about">About</Link>

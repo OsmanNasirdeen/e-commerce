@@ -7,10 +7,10 @@ const Cart = () => {
   const { cartProducts, cartTotalAmount } = useSelector((state) => state.store);
   return (
     <>
-      <div className="cart-headings">
-        <p className="product-heading">product</p>
-        <p className="quantity-heading"> quantity</p>
-        <p className="total-heading">total</p>
+      <div className="cart-headings row">
+        <p className="product-heading col-4">product</p>
+        <p className="quantity-heading col-3"> quantity</p>
+        <p className="total-heading col-3">total</p>
       </div>
       <div className="cart-products-container">
         {cartProducts.length == 0 ? (
@@ -25,6 +25,7 @@ const Cart = () => {
                   image: image,
                   price: price,
                   amount: amount,
+                  totalAmount: price.$numberDecimal * amount,
                   id: _id,
                 }}
                 key={_id}
@@ -34,7 +35,7 @@ const Cart = () => {
         )}
         <div className="cart-total-container">
           <p className="total-heading">total:</p>
-          <p className="cart-total-price">GHC {cartTotalAmount}</p>
+          <p className="cart-total-price">GHC {cartTotalAmount.toFixed(2)}</p>
         </div>
       </div>
     </>

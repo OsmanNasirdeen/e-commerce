@@ -1,7 +1,7 @@
 #product-details-section .product-image-container {
   width: 469px;
   margin: 0 32px 0 0;
-  background: goldenrod;
+  /* background: goldenrod; */
 }
 #product-details-section .product-info-container {
   max-width: 670px;

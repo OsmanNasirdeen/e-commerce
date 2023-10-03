@@ -8,11 +8,14 @@ const initialState = {
   cartTotalAmount: 0,
 };
 
-export const getProducts = createAsyncThunk("products/getProducts", () => {
-  return fetch(import.meta.env.VITE_PRODUCTS_URL)
-    .then((res) => res.json())
-    .catch((err) => console.log(err));
-});
+export const getProducts = createAsyncThunk(
+  "products/getProducts",
+  ({ url }) => {
+    return fetch(url)
+      .then((res) => res.json())
+      .catch((err) => console.log(err));
+  }
+);
 const productSlice = createSlice({
   name: "store",
   initialState,

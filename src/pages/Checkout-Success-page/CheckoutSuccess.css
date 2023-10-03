@@ -13,8 +13,6 @@
 }
 #checkout-success-section > h1 {
   text-transform: capitalize;
-  /* width: 50%; */
-  /* background: gold; */
   /* margin: 20px auto 0 auto; */
 }
 .order-success-msg {
@@ -29,7 +27,7 @@
   /* width: 80%; */
   /* margin: 0 auto; */
 }
-.checkout-success-btn-container > .btn-back-home {
+.checkout-success-btn-container .btn-back-home {
   text-transform: uppercase;
   font-family: var(--casual-font);
   font-weight: var(--fw-600);
@@ -38,10 +36,10 @@
   border: 2px solid var(--gray);
   cursor: pointer;
   border-radius: 5px;
-  height: 30px;
-  width: 151px;
+  height: 47px;
+  width: 198px;
 }
-.checkout-success-btn-container > .btn-back-home:hover {
+.checkout-success-btn-container .btn-back-home:hover {
   color: var(--white);
   background: var(--orange-color);
   border: 1px solid var(--orange-color);
@@ -55,10 +53,10 @@
   border: 1px solid var(--orange-color);
   cursor: pointer;
   border-radius: 5px;
-  height: 30px;
-  width: 151px;
+  height: 47px;
+  width: 198px;
   position: relative;
-  left: 80px;
+  left: 50px;
 }
 .checkout-success-btn-container > .btn-view-order:hover {
   color: var(--black-charcoal);

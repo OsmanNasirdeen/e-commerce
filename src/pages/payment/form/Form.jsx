@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import Input from "../../../components/input/Input";
 import Button from "../../../components/button/button";
 import Select from "../../../components/customSelect/select";
 import { validateForm } from "./validateForm";
 import "./Form.css";
 const Form = () => {
+  const navigate = useNavigate();
   const [showMobilePayments, setShowMobilePayments] = useState(false);
   const [user, setUser] = useState({ cardName: "", cardNumber: "" });
   const [shouldSubmit, setShouldSubmit] = useState(false);
@@ -22,7 +24,7 @@ const Form = () => {
   // submit form when no errs
   useEffect(() => {
     if (Object.keys(formErrors).length === 0 && shouldSubmit) {
-      console.log(`${JSON.stringify(user)}`);
+      navigate("/checkout-success");
     }
   }, [formErrors]);
   return (
