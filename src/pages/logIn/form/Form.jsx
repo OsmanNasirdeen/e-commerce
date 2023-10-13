@@ -22,12 +22,13 @@ const Form = () => {
     setShouldSubmit(true);
   };
 
-  const URL = "http://localhost:7000/users/logIn";
   const loginUser = () => {
     axios
-      .post(URL, user)
+      .post(`${import.meta.env.VITE_USERS_ROUTE}/logIn`, user)
       .then((response) => {
-        console.log(response.data);
+        console.log(response.data.user);
+        localStorage.setItem("token", response.data.token);
+        localStorage.setItem("user", JSON.stringify(response.data.user));
         navigate("/");
       })
       .catch((error) => console.log(error.response.data));

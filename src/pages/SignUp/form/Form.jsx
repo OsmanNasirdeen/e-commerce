@@ -30,7 +30,9 @@ const Form = () => {
       .post(`${import.meta.env.VITE_USERS_ROUTE}/signUp`, user)
       .then((response) => {
         console.log(response.data);
-        navigate("/login");
+        localStorage.setItem("token", response.data.token);
+        localStorage.setItem("user", JSON.stringify(response.data.user));
+        navigate("/");
       })
       .catch((error) => {
         console.log(error.response.data);
