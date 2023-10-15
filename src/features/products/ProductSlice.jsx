@@ -73,13 +73,11 @@ const productSlice = createSlice({
     },
     [getProducts.fulfilled]: (state, action) => {
       state.Loading = false;
-      console.log(action);
       state.products = action.payload.products;
       state.productsLength = state.products.length;
     },
     [getProducts.rejected]: (state) => {
       state.Loading = false;
-      console.log(action);
       state.products = action.payload;
     },
   },
