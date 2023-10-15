@@ -33,6 +33,8 @@ const Form = () => {
         localStorage.setItem("token", response.data.token);
         localStorage.setItem("user", JSON.stringify(response.data.user));
         navigate("/");
+
+        location.reload();
       })
       .catch((error) => {
         console.log(error.response.data);

@@ -6,7 +6,6 @@ const CheckoutSuccess = ({ user }) => {
 
   const backHomePage = () => {
     navigate("/");
-    console.log("hrtt");
     location.reload();
   };
   return (

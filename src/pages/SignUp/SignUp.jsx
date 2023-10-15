@@ -8,7 +8,7 @@ const SignUp = () => {
       <div className="SignUp-form-wrapper">
         <h4>Sign Up</h4>
         <Form />
-        <div id="signUp-to-logIn-link">
+        <div className="signUp-logIn-link">
           already registered ? <Link to="/logIn">Log In</Link>{" "}
         </div>
       </div>
