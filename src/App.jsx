@@ -26,13 +26,12 @@ function App() {
 
   const getUser = (user) => {
     axios
-      .post(`http://localhost:7000/users/user`, user, {
+      .post(`${import.meta.env.VITE_USERS_ROUTE}/user`, user, {
         headers: {
           "x-access-token": loggedInUserToken,
         },
       })
       .then((response) => {
-        console.log(response.data.user);
         setLoggedInUser(response.data.user);
         // navigate("/");
       })
@@ -40,9 +39,8 @@ function App() {
   };
   // fetch data
   useEffect(() => {
-    console.log(loggedInUser?.email);
     getUser(loggedInUser);
-    dispatch(getProducts({ url: import.meta.env.VITE_PRODUCTS_URL }));
+    dispatch(getProducts({ url: import.meta.env.VITE_PRODUCTS_ROUTE }));
   }, []);
   useEffect(() => {
     dispatch(calculateTotalCart());

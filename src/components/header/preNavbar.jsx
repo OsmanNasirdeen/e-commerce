@@ -36,7 +36,7 @@ const PreNavbar = () => {
     if (Object.keys(formError).length === 0 && shouldSubmit) {
       dispatch(
         getProducts({
-          url: `${import.meta.env.VITE_PRODUCTS_URL}/${searchValue}`,
+          url: `${import.meta.env.VITE_PRODUCTS_ROUTE}/${searchValue}`,
         })
       );
     }
