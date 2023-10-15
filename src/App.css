@@ -1,0 +1,11 @@
+.form-error-msg {
+  color: red;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+}
+.signUp-logIn-link {
+  text-align: center;
+}

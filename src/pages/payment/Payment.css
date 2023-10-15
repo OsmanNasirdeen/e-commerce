@@ -1,0 +1,10 @@
+.payment-form-wrapper {
+  width: 448px;
+  /* background: red; */
+  padding: 12px 20px;
+  margin: 50px auto;
+  border: 1px solid var(--gray);
+}
+.payment-form-wrapper > h4 {
+  text-align: center;
+}

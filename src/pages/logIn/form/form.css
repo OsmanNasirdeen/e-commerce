@@ -1,0 +1,17 @@
+#logIn-form {
+  width: 80%;
+  margin: 0 auto 50px auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.user-email-wrapper,
+.user-password-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.logIn-submit-btn-wrapper > .btn-violet {
+  width: 100% !important;
+}

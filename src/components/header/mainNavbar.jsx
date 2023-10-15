@@ -1,16 +1,31 @@
 import React from "react";
 import companyLogo from "../../assets/images/company-logo.jpg";
+import menuIcon from "../../assets/images/menu-icon.svg";
+import { Link } from "react-router-dom";
 const MainNavbar = () => {
   return (
     <section className="main-navbar">
-      <div className="navbar-company-logo company-logo-container">
-        <img src={companyLogo} alt="company-logo" />
+      <div className="navbar-menu-logo">
+        <img src={menuIcon} />
       </div>
+      <Link to="/">
+        <div className="navbar-company-logo company-logo-container">
+          <img src={companyLogo} alt="company-logo" />
+        </div>
+      </Link>
       <ul className="main-navbar-links">
-        <li className="nav-link">About</li>
-        <li className="nav-link">Services</li>
-        <li className="nav-link">Products</li>
-        <li className="nav-link">Contact</li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/products">Products</Link>
+        </li>
+        <li>
+          <Link to="/services">Services</Link>
+        </li>
+        <li>
+          <Link to="/contact">Contact</Link>
+        </li>
       </ul>
       <div className="user-profile">
         <div className="profile-image-container">

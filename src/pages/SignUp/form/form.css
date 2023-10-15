@@ -1,0 +1,17 @@
+#signUp-form {
+  width: 80%;
+  margin: 0 auto 15px auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.user-email-wrapper,
+.user-password-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.signUp-submit-btn-wrapper > .btn-violet {
+  width: 100% !important;
+}

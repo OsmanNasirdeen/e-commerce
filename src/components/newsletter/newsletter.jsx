@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./newsletter.css";
 const Newsletter = () => {
   return (
     <section className="newsletter-section">

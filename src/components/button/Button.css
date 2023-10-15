@@ -1,0 +1,12 @@
+.btn-violet {
+  width: 50%;
+  height: 48px;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background: var(--violet);
+  cursor: pointer;
+}
+.btn-violet:hover {
+  background: var(--dark-violet);
+}

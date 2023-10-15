@@ -1,0 +1,10 @@
+.primary-input {
+  height: 48px;
+  padding-left: 11px;
+  border: 1px solid var(--gray);
+  border-radius: 3px;
+}
+
+.primary-input:focus {
+  outline-color: var(--dark-violet);
+}

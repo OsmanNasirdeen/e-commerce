@@ -1,0 +1,23 @@
+.hero-section {
+  min-height: 282px;
+  background: var(--bannner-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0px;
+}
+.hero-text-container {
+  text-transform: uppercase;
+  font-family: var(--body-font);
+  font-weight: var(--fw-regular);
+  font-weight: 200;
+  font-size: 66px;
+  color: var(--black-nero);
+  /* line-height: 1.2em; */
+  line-height: 79.2px;
+  max-width: 37%;
+  /* background: red; */
+}
+.hero-img-container {
+  width: 380px;
+}

@@ -1,9 +1,11 @@
 import React from "react";
 import dealsIcon from "../../assets/images/deals-icon.png";
-import shoppingCart from "../../assets/images/shoppingcart.svg";
+import shoppingCart from "../../assets/images/shopping-cart-icon.svg";
 import qualityIcon from "../../assets/images/quality-icon.png";
 import securityIcon from "../../assets/images/secure-icon.svg";
-const OurOffers = () => {
+import "./offers.css";
+
+const Offers = () => {
   return (
     <section className="offers-section">
       <div className="offer">
@@ -23,7 +25,7 @@ const OurOffers = () => {
           <div className="offer-img-container">
             <img src={qualityIcon} alt="" />
           </div>
-          <h3 className="offer-heading">free delivery</h3>
+          <h3 className="offer-heading">QUALITY GUARANTEE</h3>
         </div>
         <p className="offer-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam officia
@@ -35,7 +37,7 @@ const OurOffers = () => {
           <div className="offer-img-container">
             <img src={dealsIcon} alt="" />
           </div>
-          <h3 className="offer-heading">free delivery</h3>
+          <h3 className="offer-heading">DAILY OFFERS</h3>
         </div>
         <p className="offer-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam officia
@@ -47,7 +49,7 @@ const OurOffers = () => {
           <div className="offer-img-container">
             <img src={securityIcon} alt="" />
           </div>
-          <h3 className="offer-heading">free delivery</h3>
+          <h3 className="offer-heading">100% SECURE PAYMENT</h3>
         </div>
         <p className="offer-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam officia
@@ -58,4 +60,4 @@ const OurOffers = () => {
   );
 };
 
-export default OurOffers;
+export default Offers;

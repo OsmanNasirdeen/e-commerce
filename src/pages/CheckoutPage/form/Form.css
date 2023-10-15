@@ -1,0 +1,60 @@
+#checkout-form-wrapper {
+  /* background: goldenrod; */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+#checkout-form-wrapper > .form-title {
+  position: relative;
+  margin: 0 auto;
+}
+#checkout-form-wrapper > form {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  /* background: red; */
+}
+#checkout-form-wrapper > form .contact-field-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 50px 0;
+}
+#checkout-form-wrapper > form .contact-wrapper label {
+  text-transform: capitalize;
+  margin-bottom: 6px;
+}
+.shipping-address-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+  margin-bottom: 61px;
+}
+.shipping-address-wrapper > .username-field-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.checkout-submit-btn-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* mobile styles */
+@media (max-width: 768px) {
+  #checkout-form-wrapper {
+    /* width: 100%; */
+    /* align-items: center; */
+  }
+
+  .shipping-address-wrapper > .username-field-wrapper {
+    flex-direction: column;
+    row-gap: 14px;
+  }
+
+  #checkout-form-wrapper #firstName,
+  #lastName {
+    width: 100% !important;
+  }
+}
